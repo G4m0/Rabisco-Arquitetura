@@ -15,6 +15,12 @@ export function Header() {
   }, []);
 
   useEffect(() => {
+    const close = (event: KeyboardEvent) => { if (event.key === "Escape") setOpen(false); };
+    window.addEventListener("keydown", close);
+    return () => window.removeEventListener("keydown", close);
+  }, []);
+
+  useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
@@ -67,6 +73,8 @@ export function Header() {
             type="button"
             onClick={() => setOpen((v) => !v)}
             aria-label={open ? "Fechar menu" : "Abrir menu"}
+            aria-expanded={open}
+            aria-controls="mobile-menu"
             className="flex h-10 w-10 items-center justify-center rounded-full border border-line text-ink lg:hidden"
           >
             {open ? (
@@ -80,7 +88,9 @@ export function Header() {
 
       {/* Menu mobile */}
       <div
-        className={`fixed inset-x-0 top-[64px] bottom-0 z-40 bg-paper transition-all duration-300 lg:hidden ${
+        id="mobile-menu"
+        hidden={!open}
+        className={`fixed inset-x-0 top-[64px] bottom-0 overflow-y-auto z-40 bg-paper transition-all duration-300 lg:hidden ${
           open ? "pointer-events-auto opacity-100" : "pointer-events-none opacity-0"
         }`}
       >

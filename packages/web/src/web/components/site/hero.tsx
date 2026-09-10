@@ -91,10 +91,13 @@ export function Hero() {
         >
           <div className="relative overflow-hidden rounded-[26px] md:rounded-[36px]">
             <img
-              src="/images/projeto-residencial.jpg"
+              src={`${import.meta.env.BASE_URL}images/projeto-residencial.jpg`}
               alt="Fachada residencial contemporânea projetada pela Rabisco Arquitetura"
               className="h-[46vh] w-full object-cover md:h-[62vh]"
               loading="eager"
+              fetchPriority="high"
+              width={1440}
+              height={900}
             />
             <div
               aria-hidden

@@ -9,7 +9,7 @@ export const site = {
   phoneHref: "tel:+556436012022",
   whatsappLabel: "(62) 99615-7278",
   whatsappNumber: "5562996157278",
-  hours: "Seg a sex, a partir das 08:30",
+  hours: "Consulte os horários pelo telefone",
   rating: "5,0",
   reviewCount: 6,
   mapsQuery:

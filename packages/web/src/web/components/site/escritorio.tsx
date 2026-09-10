@@ -36,7 +36,7 @@ export function Escritorio() {
           <div className="reveal md:col-span-5">
             <div className="relative">
               <img
-                src="/images/arquiteta.jpg"
+                src={`${import.meta.env.BASE_URL}images/arquiteta.jpg`}
                 alt="Responsável técnica do escritório Rabisco Arquitetura & Interiores"
                 loading="lazy"
                 className="aspect-[4/5] w-full rounded-[24px] object-cover md:rounded-[32px]"

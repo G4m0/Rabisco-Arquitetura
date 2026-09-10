@@ -259,3 +259,14 @@
     transform: none !important;
   }
 }
+
+/* Touch, anchor navigation and keyboard accessibility. */
+section[id] { scroll-margin-top: 6rem; }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 3px solid #b3121a;
+  outline-offset: 4px;
+}
+@media (max-width: 767px) {
+  body { padding-bottom: calc(5.5rem + env(safe-area-inset-bottom)); }
+  .eyebrow { font-size: 0.75rem; letter-spacing: 0.16em; }
+}

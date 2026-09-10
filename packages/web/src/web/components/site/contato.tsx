@@ -64,6 +64,7 @@ export function Contato() {
                       key={item}
                       type="button"
                       onClick={() => setTipo(item)}
+                      aria-pressed={tipo === item}
                       className={`font-display rounded-full border px-4 py-2 text-xs tracking-wide transition-colors ${
                         tipo === item
                           ? "border-ink bg-ink text-white"

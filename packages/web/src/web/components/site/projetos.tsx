@@ -3,7 +3,7 @@ import { whatsappLink } from "../../lib/site";
 
 const projetos = [
   {
-    img: "/images/projeto-residencial.jpg",
+    img: `${import.meta.env.BASE_URL}images/projeto-residencial.jpg`,
     tag: "Residencial",
     title: "Residência térrea contemporânea",
     text: "Volumes brancos, ripado de madeira e iluminação embutida na fachada.",
@@ -11,7 +11,7 @@ const projetos = [
     ratio: "aspect-[16/11] md:aspect-auto md:h-[460px]",
   },
   {
-    img: "/images/projeto-retrofit.jpg",
+    img: `${import.meta.env.BASE_URL}images/projeto-retrofit.jpg`,
     tag: "Retrofit",
     title: "Retrofit de fachada",
     text: "Pedra natural, cobogó metálico e grandes panos de vidro em imóvel existente.",
@@ -19,7 +19,7 @@ const projetos = [
     ratio: "aspect-[16/11] md:aspect-auto md:h-[460px]",
   },
   {
-    img: "/images/projeto-nova-visao.jpg",
+    img: `${import.meta.env.BASE_URL}images/projeto-nova-visao.jpg`,
     tag: "Institucional",
     title: "Igreja Nova Visão",
     text: "Acesso coberto, acessibilidade e projeto de iluminação cênica da fachada.",
@@ -27,7 +27,7 @@ const projetos = [
     ratio: "aspect-[16/11] md:aspect-auto md:h-[460px]",
   },
   {
-    img: "/images/projeto-impacto.jpg",
+    img: `${import.meta.env.BASE_URL}images/projeto-impacto.jpg`,
     tag: "Comercial",
     title: "Impacto Auto Peças",
     text: "Fachada comercial com marquise, mármore e comunicação visual integrada.",
