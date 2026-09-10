@@ -15,11 +15,11 @@ export function Hero() {
 
         <figure className="m-0 min-w-0 overflow-hidden rounded-[24px] bg-ink lg:col-start-2 lg:row-span-2 lg:row-start-1">
           <img
-            src={`${import.meta.env.BASE_URL}images/fachada-rabisco.png`}
+            src={`${import.meta.env.BASE_URL}images/fachada-rabisco-v2.png`}
             alt="Fachada da Rabisco Arquitetura & Interiores, com a entrada e as placas do escritório"
             className="block h-auto w-full"
-            width={1110}
-            height={530}
+            width={1082}
+            height={490}
             loading="eager"
             fetchPriority="high"
           />
