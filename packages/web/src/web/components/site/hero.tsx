@@ -40,7 +40,7 @@ export function Hero() {
             style={{ "--rise-delay": "240ms" } as never}
           >
             Arquitetura e design de interiores para residências, comércio e espaços
-            institucionais. Projeto autoral, detalhamento executivo e acompanhamento de obra —
+            institucionais. Nosso escritório, detalhamento executivo e acompanhamento de obra —
             tudo com quem mora aqui e atende de perto.
           </p>
 
@@ -91,23 +91,23 @@ export function Hero() {
         >
           <div className="relative overflow-hidden rounded-[26px] md:rounded-[36px]">
             <img
-              src={`${import.meta.env.BASE_URL}images/projeto-residencial.jpg`}
-              alt="Fachada residencial contemporânea projetada pela Rabisco Arquitetura"
-              className="h-[46vh] w-full object-cover md:h-[62vh]"
+              src={`${import.meta.env.BASE_URL}images/fachada-rabisco.png`}
+              alt="Fachada do escritório Rabisco Arquitetura & Interiores em São Luís de Montes Belos"
+              className="block h-auto w-full object-contain"
               loading="eager"
               fetchPriority="high"
-              width={1440}
-              height={900}
+              width={1109}
+              height={530}
             />
             <div
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-t from-ink/70 via-ink/5 to-transparent"
+              className="hidden"
             />
-            <div className="absolute inset-x-0 bottom-0 flex flex-wrap items-end justify-between gap-4 p-5 md:p-8">
+            <div className="flex flex-wrap items-center justify-between gap-4 bg-ink p-5 md:p-8">
               <div>
                 <p className="eyebrow text-white/60">Projeto autoral</p>
                 <p className="font-display mt-1 text-xl font-light text-white md:text-2xl">
-                  Residência contemporânea
+                  Rabisco Arquitetura & Interiores
                 </p>
               </div>
               <a
@@ -115,7 +115,7 @@ export function Hero() {
                 className="font-display inline-flex items-center gap-2 rounded-full bg-white/12 px-4 py-2.5 text-xs tracking-wide text-white backdrop-blur-md transition-colors hover:bg-white hover:text-ink"
               >
                 <MapPin className="h-3.5 w-3.5" strokeWidth={1.6} />
-                Atendemos toda a região
+                Conheça nossa localização
               </a>
             </div>
           </div>
